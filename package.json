@@ -1,0 +1,42 @@
+{
+  "name": "doctor-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \" npm run server\" \" npm run client\" "
+  },
+  "author": "Praveen",
+  "license": "ISC",
+  "devDependencies": {
+    "@sendgrid/mail": "^7.7.0",
+    "axios": "^1.3.5",
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^8.0.1",
+    "cors": "^2.8.5",
+    "crypto-js": "^4.1.1",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "fuse.js": "^6.6.2",
+    "jsonwebtoken": "^9.0.0",
+    "moment": "^2.29.4",
+    "mongoose": "^7.1.0",
+    "nodemailer": "^6.9.1",
+    "nodemon": "^2.0.22",
+    "razorpay": "^2.8.6",
+    "shortid": "^2.2.16",
+    "twilio": "^4.11.0",
+    "uuid": "^9.0.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "gridfs-stream": "^1.1.1",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1"
+  }
+}
